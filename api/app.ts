@@ -14,7 +14,7 @@ function buildApp() {
     app.use(cors())
     app.use(express.json())
 
-   
+
     // Routers
     app.get('/', (req, res) => {
         res.status(200).send({ message: "Welcome to the task management application." })

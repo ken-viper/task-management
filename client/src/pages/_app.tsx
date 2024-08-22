@@ -5,6 +5,6 @@ import BaseLayout from "@/components/layouts/BaseLayout";
 
 export default function App({ Component, pageProps }: AppProps) {
   return <BaseLayout>
-    <Component {...pageProps} />
+    <Component {...pageProps} /> 
   </BaseLayout>;
 }

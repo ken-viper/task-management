@@ -8,7 +8,7 @@ export default {
             const tasks: ITask[] = await Task.find({ userId: req.user._id }).sort({ createdAt: -1 })
             return res.json({ status: true, tasks, message: "All tasks retrieved." }).status(200)
         } catch (error: any) {
-            return res.json({ status: false, message: error.message }).status(400)
+            return res.json({ status: false, message: error.message }).status(400) 
         }
     },
     createTask: async (req: any, res: Response) => {
